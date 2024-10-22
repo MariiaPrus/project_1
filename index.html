@@ -5,5 +5,39 @@
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <script>
+      //Task 1
+      console.log("Типи даних у JavaScript:");
+
+      // Примітивні типи
+      console.log(typeof "це рядок"); // string
+      console.log(typeof 42); // number
+      console.log(typeof true); // boolean
+      console.log(typeof null); // object (це відома помилка в JavaScript)
+      console.log(typeof undefined); // undefined
+      console.log(typeof Symbol("унікальний символ")); // symbol
+      console.log(typeof BigInt(9007199254740991n)); // bigint
+
+      // Об'єктні типи
+      console.log(typeof {}); // object
+      console.log(typeof []); // object (масив є типом об'єкта)
+      console.log(typeof function () {}); // function (функція є типом об'єкта)
+
+      //Task 2
+      let name = prompt("Ім'я");
+      let surname = prompt("Прізвище");
+      let age = prompt("вік");
+      let message = `Привіт, мене звати ${name} ${surname} і мені ${age} років.`;
+      console.log(message);
+
+      //Task 3
+      const str = "56432";
+      const numbers = str.split("");
+      console.log(numbers);
+      console.log(
+        `${numbers[0]} ${numbers[1]} ${numbers[2]} ${numbers[3]} ${numbers[4]} `
+      );
+    </script>
+  </body>
 </html>
